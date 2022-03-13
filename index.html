@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather App</title>
+  <link rel="stylesheet" href="./style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>Weather App</h1>
+  </header>
+  <main>
+    <div class="content">
+      <form>
+        <label>
+          City name:
+          <input
+            type="text"
+            id="city"
+            name="city"
+          >
+        </label>
+        <button
+          type="submit"
+          id="search-btn"
+          required
+        >
+          Find weather
+        </button>
+      </form>
+      <div class="weather-wrp">
+        <h2 id="city-name"></h2>
+        <ul>
+          <li id="general"></li>
+          <li>
+            Temperature:
+            <span id="temperature"></span>
+          </li>
+          <li>
+            Feels like:
+            <span id="feels-like"></span>
+          </li>
+          <li>
+            Wind speed:
+            <span id="wind-speed"></span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </main>
+</body>
+</html>
